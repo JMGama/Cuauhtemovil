@@ -8,6 +8,10 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { SearchPage } from '../pages/search/search';
+import { Connectivity } from '../providers/connectivity-service/connectivity-service';
+import { GoogleMaps } from '../providers/google-maps/google-maps';
+import { Network } from '@ionic-native/network';
+import { Geolocation } from '@ionic-native/geolocation';
 
 @NgModule({
 	declarations: [
@@ -30,7 +34,12 @@ import { SearchPage } from '../pages/search/search';
 	providers: [
 		StatusBar,
 		SplashScreen,
+		Connectivity,
+      GoogleMaps,
+		Network,
+      Geolocation,
 	{provide: ErrorHandler, useClass: IonicErrorHandler},
+    
 	]
 })
 export class AppModule {}
