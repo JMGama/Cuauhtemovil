@@ -14,7 +14,7 @@ page-search {
     background-color: #000;
     opacity: 0.5;
     width: 100%;
-    height: 100%;
+    height: 50%;
     z-index: 1;
   }
  
@@ -41,6 +41,15 @@ page-search {
 	   border: 3px solid #82b93a;
   }
 	
+	#tiempo {
+	   text-align: center;
+		width: 100%;
+		border-radius: 10px;
+	   border: 3px solid #82b93a;
+		margin-top: 10px;
+	}
+	
+
 	
 	//DATOS DEL MAPA GOOGLE MAPS
   .gmnoprint a, .gmnoprint span {

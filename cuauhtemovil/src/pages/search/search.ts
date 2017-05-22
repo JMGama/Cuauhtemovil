@@ -10,7 +10,7 @@ declare var google;
   templateUrl: 'search.html'
 })
 export class SearchPage {
- 
+	
     @ViewChild('map') mapElement: ElementRef;
     @ViewChild('pleaseConnect') pleaseConnect: ElementRef;
  
@@ -24,6 +24,10 @@ export class SearchPage {
     saveDisabled: boolean;
     location: any;  
  
+	 public event = {
+     timeStarts: '14:00'
+    }
+	 
     constructor(public navCtrl: NavController, public zone: NgZone, public maps: GoogleMaps, public platform: Platform, public geolocation: Geolocation, public viewCtrl: ViewController) {
         this.searchDisabled = true;
         this.saveDisabled = true;
@@ -36,9 +40,9 @@ export class SearchPage {
             this.autocompleteService = new google.maps.places.AutocompleteService();
             this.placesService = new google.maps.places.PlacesService(this.maps.map);
             this.searchDisabled = false;
- 
+ 	
         }); 
- 
+ 		  
     }
  
     selectPlace(place){
@@ -112,6 +116,6 @@ export class SearchPage {
  
     close(){
         this.viewCtrl.dismiss();
-    }   
- 
+    } 
+	  
 }

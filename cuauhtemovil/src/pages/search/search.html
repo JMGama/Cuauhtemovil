@@ -40,7 +40,7 @@
  	 <ion-row>
 		 <ion-col col-2></ion-col>
 		 <ion-col col-10>
-			<h3 ionic-text>Selecciona tu destino</h3>
+			<h4 ion-text color="primary">Selecciona tu destino</h4>
 		 </ion-col>
 	 </ion-row>
     <div #pleaseConnect id="please-connect">
@@ -48,7 +48,18 @@
     </div>
  
     <div #map id="map">
-        <ion-spinner></ion-spinner>
+        <ion-spinner></ion-spinner>	
     </div>
+	
+
+		<ion-row>
+			<div id="tiempo">
+			<ion-item>
+				<ion-label>Selecciona hora de Salida:</ion-label>
+				<ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
+			</ion-item>
+			</div>
+		</ion-row>	
+
  
 </ion-content>
