@@ -18,16 +18,16 @@
 
 <ion-header>
     <ion-navbar color="secondary">
+		 <ion-title text-center>
+      	<img class="logo" src="assets/images/title.jpg" />
+    	</ion-title>
         <ion-buttons left>
-            <button ion-button (click)="close()">Cancel</button>
-        </ion-buttons>
-        <ion-buttons right>
-            <button [disabled]="saveDisabled" ion-button (click)="save()">Save</button>
+            <button ion-button (click)="close()" icon-only clear><ion-icon name="arrow-back"></ion-icon></button>
         </ion-buttons>
     </ion-navbar>
  
     <ion-toolbar color="primary">
-        <ion-searchbar [(ngModel)]="query" (ionInput)="searchPlace()"></ion-searchbar>
+        <ion-searchbar [(ngModel)]="query" (ionInput)="searchPlace()" placeholder="Buscar Ubicación"></ion-searchbar>
     </ion-toolbar>
  
     <ion-list>
@@ -51,15 +51,17 @@
         <ion-spinner></ion-spinner>	
     </div>
 	
-
-		<ion-row>
-			<div id="tiempo">
-			<ion-item>
-				<ion-label>Selecciona hora de Salida:</ion-label>
-				<ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
-			</ion-item>
-			</div>
-		</ion-row>	
-
- 
+	<ion-row>
+		<div id="tiempo">
+		<ion-item>
+			<ion-label>Selecciona tu hora de Salida:</ion-label>
+			<ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
+		</ion-item>
+		</div>
+	</ion-row>
+	
+	<ion-row>
+		<button ion-button class="main-button" [disabled]="saveDisabled" ion-button (click)="save()">Continuar</button>
+	</ion-row>
+	
 </ion-content>

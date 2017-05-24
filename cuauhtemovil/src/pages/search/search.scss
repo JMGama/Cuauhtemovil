@@ -28,7 +28,7 @@ page-search {
   }
  
   .scroll-content {
-      overflow: hidden;
+      //overflow: hidden;
   }
  
   #map {
@@ -49,6 +49,18 @@ page-search {
 		margin-top: 10px;
 	}
 	
+	.main-button {
+		  width: 100%;
+		  border-radius: 10px;
+		  border: 1px solid #fff;
+		  background-color: #82b93a;
+		  margin-top: 10px;
+	 }
+	
+	.logo {
+		align-content: center;
+		margin-left: -10%;
+	}
 
 	
 	//DATOS DEL MAPA GOOGLE MAPS
