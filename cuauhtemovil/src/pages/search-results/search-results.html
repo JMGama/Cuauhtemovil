@@ -1,22 +1,25 @@
 <ion-header>
     <ion-navbar color="secondary">
-		 <ion-title text-center>
-      	<img class="logo" src="assets/images/title.jpg" />
+		 <ion-title start>
+      	Buscar Cuauhtémovil
     	</ion-title>
-        <ion-buttons left>
-            <button ion-button (click)="close()" icon-only clear><ion-icon name="arrow-back" ></ion-icon></button>
-        </ion-buttons>
-    </ion-navbar> 
+    </ion-navbar>
 </ion-header>
 
 
 <ion-content padding>
-	<ion-list>
-  		<ion-item *ngFor="let ruta of rutas">
+	<ion-row text-center>
+		 <ion-col col-12>
+			<h4 ion-text color="primary">Rutas encontradas</h4>
+		 </ion-col>
+	 </ion-row>
+	<ion-list id="list">
+  		<ion-item *ngFor="let ruta of rutas" >
     		<ion-thumbnail item-left>
 				<img src="http://static.wixstatic.com/media/cad819_6f2e663e3ed647e59859f832d857d21e.png/v1/fill/w_62,h_62,al_c,usm_0.66_1.00_0.01/cad819_6f2e663e3ed647e59859f832d857d21e.png">
     		</ion-thumbnail>
-    		<h2 ion-text color="secondary">{{ruta}} de tu destino</h2>
+    		<h2 ion-text color="secondary">{{ruta}}</h2> 
+			<h3 ion-text color="secondary">De tu destino</h3>
     		<p ion-text color="primary">Salida • 2:00pm</p>
     		<button ion-button clear item-right>VER</button>
   		</ion-item>

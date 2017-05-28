@@ -59,7 +59,7 @@
 	</ion-row>
 	
 	<ion-row>
-		<button ion-button class="main-button" [disabled]="saveDisabled" ion-button (click)="save()">Continuar</button>
+		<button ion-button class="main-button" [disabled]="saveDisabled" ion-button [navPush]="pushPage">Continuar</button>
 	</ion-row>
 	
 </ion-content>
