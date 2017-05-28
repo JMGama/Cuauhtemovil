@@ -2,7 +2,8 @@ import { NavController, Platform, ViewController } from 'ionic-angular';
 import { Component, ElementRef, ViewChild, NgZone } from '@angular/core';
 import { Geolocation } from '@ionic-native/geolocation';
 import { GoogleMaps } from '../../providers/google-maps/google-maps';
- 
+import { SearchResultsPage } from '../search-results/search-results';
+
 declare var google;
 
 @Component({
@@ -10,6 +11,8 @@ declare var google;
   templateUrl: 'search.html'
 })
 export class SearchPage {
+	
+	 pushPage: any;
 	
     @ViewChild('map') mapElement: ElementRef;
     @ViewChild('pleaseConnect') pleaseConnect: ElementRef;
@@ -29,6 +32,7 @@ export class SearchPage {
     }
 	 
     constructor(public navCtrl: NavController, public zone: NgZone, public maps: GoogleMaps, public platform: Platform, public geolocation: Geolocation, public viewCtrl: ViewController) {
+		  this.pushPage = SearchResultsPage;
         this.searchDisabled = true;
         this.saveDisabled = true;
     }
@@ -109,13 +113,4 @@ export class SearchPage {
         }
  
     }
- 
-    save(){
-        this.viewCtrl.dismiss(this.location);
-    }
- 
-    close(){
-        this.viewCtrl.dismiss();
-    } 
-	  
 }
