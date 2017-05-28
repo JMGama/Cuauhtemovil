@@ -8,17 +8,10 @@ import { SearchPage } from '../search/search';
 })
 export class HomePage {
 
+  pushPage: any;
+	
   constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
-
+    this.pushPage = SearchPage;
   }
   
-  launchLocationPage(){
-	  let modal = this.modalCtrl.create(SearchPage);
-	  
-	  modal.onDidDismiss((location) => {
-		  console.log(location);
-	  })
-	  
-	  modal.present();
-  }
 }
