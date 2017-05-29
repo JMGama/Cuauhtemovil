@@ -1,2 +1,2 @@
 # Cuauhtemovil
-Mobile application to ger who leaves you by your house without having to divert the driver's course
+Mobile application to get who leaves you by your house without having to divert the driver's cours
