@@ -10,6 +10,7 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { SearchPage } from '../pages/search/search';
 import { SearchResultsPage } from '../pages/search-results/search-results';
+import { ResultPage } from '../pages/result/result';
 
 import { Connectivity } from '../providers/connectivity-service/connectivity-service';
 import { GoogleMaps } from '../providers/google-maps/google-maps';
@@ -22,7 +23,8 @@ import { Geolocation } from '@ionic-native/geolocation';
 		HomePage,
 		LoginPage,
 		SearchPage,
-		SearchResultsPage
+		SearchResultsPage,
+		ResultPage
 	],
 	imports: [
 		BrowserModule,
@@ -35,7 +37,8 @@ import { Geolocation } from '@ionic-native/geolocation';
 		HomePage,
 		LoginPage,
 		SearchPage,
-		SearchResultsPage
+		SearchResultsPage,
+		ResultPage
 	],
 	providers: [
 		StatusBar,
