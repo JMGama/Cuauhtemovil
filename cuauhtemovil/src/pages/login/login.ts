@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ModalController } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { CreateUserPage } from '../create-user/create-user';
 
 @Component({
   selector: 'page-login',
@@ -8,10 +9,12 @@ import { HomePage } from '../home/home';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController) {
+  pushPage: any;
 
+  constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
+    this.pushPage = CreateUserPage;
   }
-	
+  
   //Hace la validacion del usuario y contrasenia
   login() {
 	  this.navCtrl.setRoot(HomePage);
