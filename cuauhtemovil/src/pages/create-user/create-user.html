@@ -1,12 +1,96 @@
 <ion-header>
-  <ion-navbar color="secondary">
-    <ion-title text-center>
-      <img class="logo" src="assets/images/title.jpg" />
-    </ion-title>
-  </ion-navbar>
+
+    <ion-navbar color="secondary">
+		<ion-title start>
+      		Crear Nueva Cuenta
+    	</ion-title>
+    </ion-navbar>
+
 </ion-header>
 
 
 <ion-content padding>
-	
+
+	<ion-row text-center>
+		 <ion-col col-12>
+			<h4 ion-text color="primary">Datos del Usuario</h4>
+		 </ion-col>
+	</ion-row>
+
+	<form>
+		<ion-list id="list">
+
+	  		<ion-row>
+	  			<ion-col>
+	  				<ion-item>
+			  			<ion-label floating>Nombre:</ion-label>
+			  			<ion-input type="text"></ion-input>
+		  			</ion-item>
+		  		</ion-col>
+	  		</ion-row>
+
+	  		<ion-row>
+	  			<ion-col>
+	  				<ion-item>
+			  			<ion-label floating>Apellidos:</ion-label>
+			  			<ion-input type="text"></ion-input>
+		  			</ion-item>
+		  		</ion-col>
+	  		</ion-row>
+
+	  		<ion-row>
+	  			<ion-col>
+	  				<ion-item>
+			  			<ion-label floating>Matricula:</ion-label>
+			  			<ion-input type="text"></ion-input>
+		  			</ion-item>
+		  		</ion-col>
+	  		</ion-row>
+
+	  		<ion-row>
+	  			<ion-col>
+	  				<ion-item>
+						<ion-label floating>Fecha de nacimiento:</ion-label>
+						<ion-datetime displayFormat="DD/MMMM/YYYY" pickerFormat="DD MMMM YYYY"></ion-datetime>
+					</ion-item>
+	  			</ion-col>
+	  		</ion-row>
+
+	  		<ion-row>
+	  			<ion-col>
+	  				<ion-item>
+			  			<ion-label floating>Correo (Preferente institucional):</ion-label>
+			  			<ion-input type="email"></ion-input>
+		  			</ion-item>
+		  		</ion-col>
+	  		</ion-row>
+
+	  		<ion-row>
+	  			<ion-col>
+	  				<ion-item>
+			  			<ion-label floating>Contraseña:</ion-label>
+			  			<ion-input type="password"></ion-input>
+		  			</ion-item>
+		  		</ion-col>
+	  		</ion-row>
+
+	  		<ion-row>
+	  			<ion-col>
+	  				<ion-item>
+			  			<ion-label floating>Repite Contraseña:</ion-label>
+			  			<ion-input type="password"></ion-input>
+		  			</ion-item>
+		  		</ion-col>
+	  		</ion-row>
+
+	  		<ion-row>
+			 	<ion-col col-4></ion-col>
+			 	<ion-col col-4>
+					<button id="finalizar" ion-button class="login-button" (click)="createUser()">Finalizar</button>
+			 	</ion-col>
+		  	</ion-row>
+
+	  	</ion-list>
+  	</form>
+
 </ion-content>

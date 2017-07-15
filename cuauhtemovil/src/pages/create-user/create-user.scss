@@ -1,3 +1,26 @@
 page-create-user {
 
+	#list {
+		border-radius: 10px;
+	    border: 2px solid #82b93a;
+		padding: 5px;
+	}
+	ion-row {
+		  margin-top: -10px;
+		  align-items: center;
+		  text-align: center;
+	 }
+	 
+	 ion-item {
+		  border-radius: 10px;
+		  font-size: 0.9em;
+	 }
+
+	 ion-label, ion-input, ion-datetime {
+	 	  font-size: 0.8em;
+	 }
+
+	 #finalizar {
+	 	  margin-top: 15px;
+	 }
 }
