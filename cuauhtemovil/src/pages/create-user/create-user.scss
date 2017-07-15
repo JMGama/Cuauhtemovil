@@ -6,7 +6,7 @@ page-create-user {
 		padding: 5px;
 	}
 	ion-row {
-		  margin-top: -9px;
+		  margin-top: -10px;
 		  align-items: center;
 		  text-align: center;
 	 }
@@ -16,7 +16,11 @@ page-create-user {
 		  font-size: 0.9em;
 	 }
 
-	 ion-label, ion-input {
+	 ion-label, ion-input, ion-datetime {
 	 	  font-size: 0.8em;
+	 }
+
+	 #finalizar {
+	 	  margin-top: 15px;
 	 }
 }

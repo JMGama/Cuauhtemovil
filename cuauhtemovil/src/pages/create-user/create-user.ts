@@ -14,4 +14,7 @@ export class CreateUserPage {
     console.log('ionViewDidLoad CreateUserPage');
   }
 
+  createUser(){
+
+  }
 }
