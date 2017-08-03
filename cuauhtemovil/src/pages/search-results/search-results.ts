@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ModalController } from 'ionic-angular';
+import { ResultPage } from '../result/result';
 
 @Component({
   selector: 'page-search-results',
@@ -8,8 +9,11 @@ import { NavController } from 'ionic-angular';
 export class SearchResultsPage {
 
   rutas: any;
+
+  pushPage: any;
 	
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
+	 this.pushPage = ResultPage;
     this.rutas = [
 		 '10 m',
 		 '50 m',
