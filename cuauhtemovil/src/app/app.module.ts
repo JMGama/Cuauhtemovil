@@ -9,6 +9,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { SearchPage } from '../pages/search/search';
+import { UploadPage } from '../pages/upload/upload';
 import { SearchResultsPage } from '../pages/search-results/search-results';
 import { ResultPage } from '../pages/result/result';
 import { CreateUserPage } from '../pages/create-user/create-user';
@@ -24,6 +25,7 @@ import { Geolocation } from '@ionic-native/geolocation';
 		HomePage,
 		LoginPage,
 		SearchPage,
+		UploadPage,
 		SearchResultsPage,
 		ResultPage,
 		CreateUserPage
@@ -39,6 +41,7 @@ import { Geolocation } from '@ionic-native/geolocation';
 		HomePage,
 		LoginPage,
 		SearchPage,
+		UploadPage,
 		SearchResultsPage,
 		ResultPage,
 		CreateUserPage

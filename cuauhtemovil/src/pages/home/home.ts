@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, ModalController } from 'ionic-angular';
 import { SearchPage } from '../search/search';
+import { UploadPage } from '../upload/upload';
 
 @Component({
   selector: 'page-home',
@@ -8,10 +9,12 @@ import { SearchPage } from '../search/search';
 })
 export class HomePage {
 
-  pushPage: any;
+  pushSearchPage: any;
+  pushUploadPage: any;
 	
   constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
-    this.pushPage = SearchPage;
+    this.pushSearchPage = SearchPage;
+	  this.pushUploadPage = UploadPage;
   }
   
 }
